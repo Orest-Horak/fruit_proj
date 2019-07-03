@@ -57,16 +57,17 @@ public class Fruit implements Serializable {
 
 
     }
-//serialization
-    public void input(ArrayList arrayList) throws IOException {
+//deserialization
+    public static void input(ArrayList arrayList) throws IOException {
         FileOutputStream fos = new FileOutputStream("fruits.xml");
         XMLEncoder encoder = new XMLEncoder(fos);
         encoder.writeObject(arrayList);
         encoder.close();
         fos.close();
     }
-//deserialization
-    public void output() {
+
+    //serialization
+    public  void output() {
         try (XMLDecoder xmlDecoder = new XMLDecoder(new FileInputStream("fruits.xml"))) {
             ArrayList<Fruit> arrayList = (ArrayList<Fruit>) xmlDecoder.readObject();
             System.out.printf(arrayList.toString());
