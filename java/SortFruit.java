@@ -1,4 +1,4 @@
-package Demo2_Fruit;
+package Demo2_Fruit.java;
 
 import java.util.Comparator;
 //sorting obj by its property

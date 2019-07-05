@@ -1,4 +1,4 @@
-package Demo2_Fruit;
+package Demo2_Fruit.java;
 
 import java.io.BufferedReader;
 import java.io.IOException;

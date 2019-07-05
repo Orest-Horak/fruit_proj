@@ -1,4 +1,4 @@
-package Demo2_Fruit;
+package Demo2_Fruit.java;
 
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
@@ -11,8 +11,8 @@ import java.util.List;
 
 public class Methods {
     //serialization-deserialization for list of fruits
-    //deserialization(input)
-    public static  void deserialization(ArrayList<Fruit> fruits) {
+    //serialization(input)
+    public static  void serialization(ArrayList<Fruit> fruits) {
         try {
             FileOutputStream fos = new FileOutputStream("fruit.xml");
             XMLEncoder encoder = new XMLEncoder(fos);
@@ -25,14 +25,15 @@ public class Methods {
         }
     }
 
-    //serialization(output)
-    public static void serialization() {
+    //deserialization(output)
+    public static void deserialization() {
         try (XMLDecoder xmlDecoder = new XMLDecoder(new FileInputStream("fruit.xml"))) {
             ArrayList<Fruit> fruits = (ArrayList<Fruit>) xmlDecoder.readObject();
             System.out.printf(fruits.toString());
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+
     }
 
     //for sorted list serialization-deserialization

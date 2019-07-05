@@ -1,4 +1,4 @@
-package Demo2_Fruit;
+package Demo2_Fruit.java;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
@@ -12,15 +12,15 @@ public class Base_main {
         Fruit fruit = new Fruit();
         Fruit citrus = new Citrus();
         //fill our list of fruits
-        fruitsList.add(new Fruit("Apple", "Green"));
-        fruitsList.add(new Fruit("Pineapple", "Yellow"));
-        fruitsList.add(new Fruit("Strawberry", "Red"));
-        fruitsList.add(new Fruit("Banana", "Yellow"));
-        fruitsList.add(new Fruit("Pear", "Orange"));
-        fruitsList.add(new Fruit("Mango", "Yellow"));
-        fruitsList.add(new Fruit("Melon", "Yellow"));
-        fruitsList.add(new Fruit("Grape", "Purple"));
-        fruitsList.add(new Fruit("Cherry", "Red"));
+        fruitsList.add(new Fruit("Apple", "green"));
+        fruitsList.add(new Fruit("Pineapple", "yellow"));
+        fruitsList.add(new Fruit("Strawberry", "red"));
+        fruitsList.add(new Fruit("Banana", "yellow"));
+        fruitsList.add(new Fruit("Pear", "orange"));
+        fruitsList.add(new Fruit("Mango", "yellow"));
+        fruitsList.add(new Fruit("Melon", "yellow"));
+        fruitsList.add(new Fruit("Grape", "purple"));
+        fruitsList.add(new Fruit("Cherry", "red"));
 
         Scanner scan = new Scanner(System.in);//scanner for switch case menu
         while (true) {
@@ -65,7 +65,7 @@ public class Base_main {
                 case 5: {
                     Scanner col = new Scanner(System.in);
                     System.out.println("Enter color");
-                    String color = col.next();
+                    String color = col.next().toLowerCase();
                     List<Fruit> sortedByColor = Methods.compareByColor(fruitsList, color);
                     for (Fruit f : sortedByColor) {
                         f.output();
@@ -82,12 +82,12 @@ public class Base_main {
                 }
                 case 7: {
 
-                    Methods.serialization();
+                    Methods.serialization(fruitsList);
                     System.out.println("Serialized");
                     break;
                 }
                 case 8: {
-                    Methods.deserialization(fruitsList);
+                    Methods.deserialization();
                     System.out.println("Deserialized");
                     break;
                 }

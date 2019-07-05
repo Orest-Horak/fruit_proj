@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Green</string>
+    </void>
+    <void property="name">
+     <string>Apple</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Yellow</string>
+    </void>
+    <void property="name">
+     <string>Banana</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Red</string>
+    </void>
+    <void property="name">
+     <string>Cherry</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Purple</string>
+    </void>
+    <void property="name">
+     <string>Grape</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Yellow</string>
+    </void>
+    <void property="name">
+     <string>Mango</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Yellow</string>
+    </void>
+    <void property="name">
+     <string>Melon</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Orange</string>
+    </void>
+    <void property="name">
+     <string>Pear</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Yellow</string>
+    </void>
+    <void property="name">
+     <string>Pineapple</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Demo2_Fruit.Fruit">
+    <void property="color">
+     <string>Red</string>
+    </void>
+    <void property="name">
+     <string>Strawberry</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
