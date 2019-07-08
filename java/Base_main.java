@@ -66,7 +66,7 @@ public class Base_main {
                     Scanner col = new Scanner(System.in);
                     System.out.println("Enter color");
                     String color = col.next().toLowerCase();
-                    List<Fruit> sortedByColor = Methods.compareByColor(fruitsList, color);
+                    List<Fruit> sortedByColor = Methods.filterByColor(fruitsList, color);
                     for (Fruit f : sortedByColor) {
                         f.output();
                     }

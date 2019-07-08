@@ -61,7 +61,7 @@ public class Methods {
     }
 
     //------------------------------------------------------------------------------------
-    public static ArrayList<Fruit> compareByColor(ArrayList<Fruit> fruits, String color) {
+    public static ArrayList<Fruit> filterByColor(ArrayList<Fruit> fruits, String color) {
         ArrayList<Fruit> newFruitsList = new ArrayList();
         for (Fruit fruit : fruits) {
             if (fruit.getColor().equals(color)) {
