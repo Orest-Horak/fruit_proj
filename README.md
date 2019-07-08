@@ -1,4 +1,4 @@
-# fruit project for demo2
+# Fruit project for demo2
 TASK
 1) Утворити клас Фрукт, який містить:
 - поля назва та колір, 
